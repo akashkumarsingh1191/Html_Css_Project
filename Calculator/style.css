@@ -49,6 +49,7 @@ body{
    border-radius: 1.5rem;
    color: rgb(208, 223, 4);
 }
+
 .btn input[type='button']:hover{
     font-size: 2.5rem;
     color: black;
