@@ -9,22 +9,22 @@
     font-family: 'Poppins', sans-serif;
 }
 ::-webkit-scrollbar{
-    width: 1.1rem;
+    width: 1rem;
 }
 ::-webkit-scrollbar-thumb{
-    border-radius: .5rem;
-    background: linear-gradient(to top right,var(--bg-color),var(--third-color),var(--text-color));
+    border-radius: .6rem;
+    background: linear-gradient(to top right,var(--second-bg-color),var(--third-color),var(--main-color));
 }
 ::-webkit-scrollbar-thumb:hover{
-    background: linear-gradient(to bottom left,#e2e2e7,#c789bf,#e03daf);
+    background: linear-gradient(to bottom left,#363686,#dbe208,#087df2);
 }
 :root{
-    --bg-color:#081b29;
-    --second-bg-color:#112e42;
-    --text-color:#ededed;
+    --bg-color:#10374e;
+    --second-bg-color:#f0ae7f;
+    --text-color:#f3f3db;
     --main-color:#6e5ff1;
-    --third-color:#ffaaf4;
-    --next-color:#e2e609;
+    --third-color:#ec8bdf;
+    --next-color:#08f36e;
 }
 html{
     font-size: 62.5%;
@@ -92,7 +92,8 @@ section{
 }
 .home-content h1{
     font-size: 5.6rem;
-    font-weight: 700;
+    font-weight: 800;
+    text-shadow: .1rem .2rem red;
     line-height: 1.3;
 }
 .home-content h1 span{
@@ -132,7 +133,7 @@ section{
     border-radius: .8rem;
     font-size: 1.8rem;
     font-weight: 600;
-    letter-spacing: .1rem;
+    letter-spacing: .5rem;
     color: var(--bg-color);
     z-index: 1;
     overflow: hidden;
@@ -259,10 +260,10 @@ section{
     width: 120%;
     height: 120%;
     border-radius: 50%;
-    border-top: .5rem solid var(--next-color);
-    border-bottom: .5rem solid transparent;
+    border-top: .5rem solid var();
+    border-bottom: .5rem solid var();
     border-left: .3rem solid var(--main-color);
-    border-right: .3rem solid var(--third-color);
+    border-right: .3rem solid var(--text-color);
 }
 .about-content{
     text-align: center;
@@ -349,12 +350,20 @@ section{
     padding-bottom: .5rem;
 }
 .education-content .content .year i{
-    margin-right: .5rem;
+    margin-right: .3rem;
 }
 .education-content .content h3{
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--third-color);
 }
+.education-content .content a{
+    font-size: 1.3rem;
+    color: #dbe208;
+}
+.education-content .content a:hover{
+    color: #f3f3db;
+}
+
 .education-content .content p{
     font-size: 2rem;
     text-transform: capitalize;
@@ -436,7 +445,10 @@ section{
 .skill-column:nth-child(1) .skills-content .progress:nth-child(5) .bar span{
     width: 70%; 
 }
-.skill-column:nth-child(2) .skills-content .progress:nth-child(1) .bar span{
+.skill-column:nth-child(1) .skills-content .progress:nth-child(6) .bar span{
+    width: 70%; 
+}
+.skill-column:nth-child(1) .skills-content .progress:nth-child(7) .bar span{
     width: 70%; 
 }
 .contact{
