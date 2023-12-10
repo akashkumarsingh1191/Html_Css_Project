@@ -1,0 +1,101 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(219, 186, 142);
+    font-family: sans-serif;
+}
+.dollar{
+    font-size: 20px;
+}
+.container{
+    display:flex;
+    margin-top: 200px;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width: 250px;
+    background-color:#fff;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 0px 2px 10px 2px black;
+}
+.detail{
+    width:70%;
+    margin: auto;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+}
+.package{
+    font-size: 20px;
+    line-height: 0.5;
+    font-weight: 800;
+}
+.price{
+    font-size: 33px;
+    
+    font-weight: 700;
+}
+.middle{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(7,6,97,1) 0%, rgba(9,9,121,1) 0%, rgba(5,109,187,1) 0%, rgba(166,196,231,1) 0%, rgba(231,92,235,1) 0%, rgba(98,216,241,1) 0%, 
+    rgba(222,131,228,1) 100%);
+    z-index: 0;
+    height: 370px;
+    color: #fff;
+
+}
+.middle hr{
+    color: #fff;
+}
+
+.card-btn{
+    width: 100%;
+    font-weight: 600;
+    margin: 13px 0px;
+    color: #fff;
+    background-color: lightblue;
+    border: 0;
+    cursor: pointer;
+    height: 30px;
+    border-radius: 5px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: initial;
+}
+.btn-one{
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(135,72,177,0.8071603641456583) 58%, 
+    rgba(227,45,82,1) 100%);
+}
+.btn-two{
+    background-color: rgb(28, 35, 37);
+    color: #e9ece7;
+    background: linear-gradient(0deg, rgba(232,214,71,1) 0%, rgba(196,58,213,1) 53%, rgba(192,40,229,0.9360119047619048) 100%);
+}
+.btn-one:hover{
+    background: rgb(36, 206, 45);
+    background: linear-gradient(45deg, rgb(0,26,37) 29%,
+     rgb(116, 194, 26) 58%);
+}
+.btn-two:hover{
+    background: rgb(201, 194, 141);
+    background: linear-gradient(0deg, rgb(179, 35, 66) 0%, rgba(196,58,213,1) 53%, rgba(192,40,229,0.9360119047619048) 59%,
+     rgb(130, 132, 155) 100%);
+     transition: 0.5s;
+}
+@media (max-width:730px) {
+    .container{
+        flex-direction: column;
+    }
+    .card{
+        margin-top: 15px;
+    }
+    .middle{
+        height: auto;
+    }
+    
+}
